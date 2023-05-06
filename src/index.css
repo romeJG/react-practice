@@ -1,10 +1,16 @@
 .nav {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     padding: 0;
     margin: 0;
+    background-color: #131313;
+}
+
+body {
+    background-color: #1f2529;
 }
 
 .nav-items {
@@ -14,14 +20,66 @@
 
 .nav-items>li {
     padding: 10px;
+    padding-right: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
 .logo {
-    width: 60px;
+    width: 40px;
     padding: 10px;
+}
+
+
+.logo {
+    width: 35px;
+    padding: 10px;
+}
+
+.react {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-weight: bold;
+    color: #61dbfb;
+}
+
+.mainContent {
+    padding: 3%;
+    color: white;
+
+}
+
+.mainContent>h1 {
+    margin-bottom: 10%;
+}
+
+.mainContent>ul {
+    list-style: none;
+    margin-bottom: 3%;
+
+}
+
+.mainContent>ul>li::before {
+    content: "\2022";
+    color: #61dbfb;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1em;
+    margin-bottom: 3%;
+}
+
+.mainContent>img {
+    width: 40%;
+    filter: grayscale(100%);
+    position: fixed;
+    top: 10%;
+    left: 80%;
+    z-index: -9999;
+    opacity: 0.1;
 }
 
 .footer {
@@ -29,9 +87,24 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f2f2f2;
-    color: #444;
+    background-color: #131313;
+    color: #7f7f7f;
     font-size: 14px;
     padding: 20px;
     text-align: center;
+}
+
+
+.rotating {
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

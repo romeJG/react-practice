@@ -1,13 +1,13 @@
-// Import React and reactDOM component
-import React from 'react'
-import ReactDOM from 'react-dom'
+// import react and reactDOM components
+import React from "react";
+import ReactDOM from "react-dom";
 
-// import pages
-import Header from './Header'
-import Footer from './Footer'
-import MainContent from './MainContent'
+//import pages
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import MainContent from "./Components/MainContent";
 
-//import styless
+//import styles
 import "./index.css"
 
 function App() {
@@ -21,7 +21,6 @@ function App() {
 }
 
 ReactDOM.render(
-  <App />
-  ,
+  <App />,
   document.getElementById("root")
 )
