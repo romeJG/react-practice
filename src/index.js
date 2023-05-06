@@ -7,7 +7,7 @@ import Header from './Header'
 import Footer from './Footer'
 import MainContent from './MainContent'
 
-//import styles
+//import styless
 import "./index.css"
 
 function App() {
